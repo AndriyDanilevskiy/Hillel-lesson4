@@ -1,6 +1,6 @@
 package com.andriy.danilevskyy.hillel.models;
 
-
+import static com.andriy.danilevskyy.hillel.service.AnimalCounter.addCat;
 import static com.andriy.danilevskyy.hillel.service.Validator.isDistanceValid;
 
 public class Cat extends Animal {
@@ -8,6 +8,7 @@ public class Cat extends Animal {
 
     public Cat(String name) {
         this.name = name;
+        addCat();
     }
 
     @Override
